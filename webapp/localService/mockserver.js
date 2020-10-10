@@ -13,7 +13,7 @@ sap.ui.define(['sap/ui/core/util/MockServer'], function (MockServer) {
         autoRespondAfter: oUriParameters.get('serverDelay') || 1000,
       });
       // simulate
-      var sPath = jQuery.sap.getModulePath('ui5boilerplate.localService');
+      var sPath = jQuery.sap.getModulePath('integrtr.ui5firevswater.localService');
       oMockServer.simulate(sPath + '/metadata.xml', sPath + '/mockdata');
       // start
       oMockServer.start();

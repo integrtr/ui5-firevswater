@@ -1,7 +1,7 @@
-sap.ui.define(['ui5boilerplate/controller/Base.controller'], function (BaseController) {
+sap.ui.define(['integrtr/ui5firevswater/controller/Base.controller'], function (BaseController) {
   'use strict';
 
-  return BaseController.extend('ui5boilerplate.controller.Home', {
+  return BaseController.extend('integrtr.ui5firevswater.controller.Home', {
     onInit: function () {},
 
     /**

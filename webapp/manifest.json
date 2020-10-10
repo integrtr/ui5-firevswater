@@ -1,7 +1,7 @@
 {
   "_version": "1.0.0",
   "sap.app": {
-    "id": "ui5boilerplate",
+    "id": "ui5firevswater",
     "type": "application",
     "i18n": "/i18n/i18n.properties",
     "applicationVersion": {
@@ -28,7 +28,7 @@
   },
   "sap.ui5": {
     "rootView": {
-      "viewName": "ui5boilerplate.view.App",
+      "viewName": "integrtr.ui5firevswater.view.App",
       "type": "XML",
       "async": true,
       "id": "app"
@@ -48,7 +48,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "ui5boilerplate.i18n.i18n"
+          "bundleName": "integrtr.ui5firevswater.i18n.i18n"
         }
       }
     },
@@ -63,7 +63,7 @@
       "config": {
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
-        "path": "ui5boilerplate.view",
+        "path": "integrtr.ui5firevswater.view",
         "controlId": "app",
         "controlAggregation": "pages",
         "async": true

@@ -1,7 +1,7 @@
 sap.ui.define(['sap/ui/core/UIComponent'], function (UIComponent) {
   'use strict';
 
-  return UIComponent.extend('ui5boilerplate.Component', {
+  return UIComponent.extend('integrtr.ui5firevswater.Component', {
     metadata: {
       manifest: 'json',
     },

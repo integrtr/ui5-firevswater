@@ -1,10 +1,10 @@
 {
-  "name": "ui5boilerplate",
+  "name": "ui5firevswater",
   "version": "1.0.0",
-  "description": "UI5 Boilerplate project",
+  "description": "UI5 Fire vs Water",
   "private": true,
   "author": "INTEGRTR",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "keywords": [
     "UI5",
     "INTEGRTR"
@@ -20,10 +20,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/integrtr/ui5-boilerplate"
+    "url": "https://github.com/integrtr/ui5-firevswater"
   },
   "bugs": {
-    "url": "https://github.com/integrtr/ui5-boilerplate/issues"
+    "url": "https://github.com/integrtr/ui5-firevswater/issues"
   },
   "dependencies": {},
   "devDependencies": {

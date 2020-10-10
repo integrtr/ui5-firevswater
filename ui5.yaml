@@ -1,6 +1,6 @@
 specVersion: '2.1'
 metadata:
-  name: 'ui5boilerplate'
+  name: 'ui5firevswater'
 type: application
 resources:
   configuration:
