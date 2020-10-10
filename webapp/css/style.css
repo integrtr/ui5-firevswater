@@ -1,8 +1,18 @@
-.integrtrPanelBg {
+.integrtrPanelBgDark {
   background-color: black;
+  border-radius: 100px;
+}
+
+.integrtrPanelBgLight {
+  background-color: white;
+  border-radius: 100px;
 }
 
 .integrtrPanelText {
-  color: white;
   font-weight: 600;
+}
+
+.integrtrTitleQuestion {
+  font-weight: 600;
+  font-size: 20px;
 }

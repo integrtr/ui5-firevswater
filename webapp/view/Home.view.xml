@@ -5,37 +5,54 @@
   xmlns:mvc="sap.ui.core.mvc"
   xmlns:core="sap.ui.core"
 >
-	<Page showHeader="false">
-			<FlexBox
-      class="integrtrPanelBg sapUiMediumMarginBottom"
-      height="250px"
-      alignItems="Center"
-      justifyContent="Center"
-      direction="Column"
-    >
-      <Image
-        ariaDetails="detailsActiveImage"
-        src="/assets/ui5_logo.png"
-        class="sapUiMediumMarginTop"
-        width="200px"
-        decorative="false"
-      />
-				<Title class="integrtrPanelText" level="H1" titleStyle="H1" text="{i18n>HELLO_MESSAGE}" />
-      </FlexBox>
-
-    <FlexBox alignItems="Center" justifyContent="Center" direction="Row">
-      <core:Icon class="sapUiTinyMarginEnd" src="sap-icon://edit" color="#031E48" />
-      <Title titleStyle="H5" level="H5" width="100%" text="{i18n>GET_STARTED_TEXT}" />
-    </FlexBox>
-
+  <Page showHeader="false">
+    <VBox alignItems="Center">
+      <Text class="integrtrTitleQuestion sapUiLargeMarginTop" text="{i18n>TITLE_QUES}" />
+      <HBox alignItems="Center" class="sapUiLargeMarginTop">
+        <FlexBox
+          height="150px"
+          width="150px"
+          alignItems="Center"
+          justifyContent="Center"
+          class="sapUiMediumMarginTop integrtrPanelBgDark"
+        >
+          <Image
+            src="/assets/Logo_O_RGB.png"
+            press="fireLogoPress"
+            width="100px"
+            decorative="false"
+          />
+        </FlexBox>
+        <Title
+          class="sapUiMediumMarginTop sapUiSmallMargin integrtrPanelText"
+          level="H2"
+          titleStyle="H2"
+          text="or"
+        />
+        <FlexBox
+          height="150px"
+          width="150px"
+          alignItems="Center"
+          justifyContent="Center"
+          class="sapUiMediumMarginTop integrtrPanelBgLight"
+        >
+          <Image
+            src="/assets/Logo_B_RGB.png"
+            press="waterLogoPress"
+            width="100px"
+            decorative="false"
+          />
+        </FlexBox>
+      </HBox>
+    </VBox>
     <footer>
-			<Toolbar>
-				<Image src="/assets/github_logo.png" width="30px" press="githubLogoPress" />
-				<ToolbarSpacer />
-				<ToolbarSpacer />
-				<Image src="/assets/integrtr_logo.png" width="120px" press="integrtrLogoPress" />
-			</Toolbar>
-		</footer>
+      <Toolbar>
+        <Image src="/assets/github_logo.png" width="30px" press="githubLogoPress" />
+        <ToolbarSpacer />
+        <ToolbarSpacer />
+        <Image src="/assets/integrtr_logo.png" width="120px" press="integrtrLogoPress" />
+      </Toolbar>
+    </footer>
 
   </Page>
 </mvc:View>
