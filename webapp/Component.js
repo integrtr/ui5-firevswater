@@ -1,4 +1,8 @@
-sap.ui.define(['sap/ui/core/UIComponent'], function (UIComponent) {
+sap.ui.define(['sap/ui/core/UIComponent', './Firebase', 'sap/ui/model/json/JSONModel'], function (
+  UIComponent,
+  Firebase,
+  JSONModel
+) {
   'use strict';
 
   return UIComponent.extend('integrtr.ui5firevswater.Component', {
@@ -17,6 +21,18 @@ sap.ui.define(['sap/ui/core/UIComponent'], function (UIComponent) {
 
       // create the views based on the url/hash
       this.getRouter().initialize();
+
+      // set firebase model
+      this.setModel(Firebase.initializeFirebase(), 'firebase');
+
+      // set UI model
+      this.setModel(
+        new JSONModel({
+          fire: 0,
+          water: 0,
+        }),
+        'UIModel'
+      );
     },
   });
 });

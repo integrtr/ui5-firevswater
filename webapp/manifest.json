@@ -73,12 +73,30 @@
           "name": "home",
           "pattern": "",
           "target": "home"
+        },
+        {
+          "name": "fire",
+          "pattern": "fire",
+          "target": "fire"
+        },
+        {
+          "name": "water",
+          "pattern": "water",
+          "target": "water"
         }
       ],
       "targets": {
         "home": {
           "type": "View",
           "name": "Home"
+        },
+        "fire": {
+          "type": "View",
+          "name": "Fire"
+        },
+        "water": {
+          "type": "View",
+          "name": "Water"
         }
       }
     }

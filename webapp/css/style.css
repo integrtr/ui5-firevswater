@@ -1,18 +1,47 @@
+.integrtrTopPanelBgDark {
+  background-color: black;
+}
+
+.integrtrTopPanelBgLight {
+  background-color: white;
+}
+
+.integrtrPanelTextLight {
+  color: white;
+  font-weight: 600;
+  padding: 0 20px;
+}
+
+.integrtrPanelTextDark {
+  color: black;
+  font-weight: 600;
+}
+
 .integrtrPanelBgDark {
   background-color: black;
   border-radius: 100px;
+  padding: 1rem;
 }
 
 .integrtrPanelBgLight {
   background-color: white;
   border-radius: 100px;
-}
-
-.integrtrPanelText {
-  font-weight: 600;
+  padding: 1rem;
 }
 
 .integrtrTitleQuestion {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 26px;
+}
+
+.integrtrDescriptionText {
+  font-size: 16px;
+}
+
+.integrtrFireProgressBar .sapMPIBar {
+  background-color: #ff5216;
+}
+
+.integrtrWaterProgressBar .sapMPIBar {
+  background-color: #087cdc;
 }

@@ -6,45 +6,31 @@
   xmlns:core="sap.ui.core"
 >
   <Page showHeader="false">
-    <VBox alignItems="Center">
-      <Text class="integrtrTitleQuestion sapUiLargeMarginTop" text="{i18n>TITLE_QUES}" />
-      <HBox alignItems="Center" class="sapUiLargeMarginTop">
+    <FlexBox direction="Column" alignItems="Center">
+      <Text class="integrtrTitleQuestion sapUiLargeMarginTop" text="{i18n>TITLE}" />
+      <Text class="integrtrTitleQuestion sapUiLargeMarginTopBottom" text="{i18n>TITLE_QUES}" />
+
+      <FlexBox width="100%" justifyContent="Center" alignItems="Center" class="sapUiLargeMarginTop">
         <FlexBox
-          height="150px"
-          width="150px"
+          direction="Column"
           alignItems="Center"
-          justifyContent="Center"
-          class="sapUiMediumMarginTop integrtrPanelBgDark"
+          class="integrtrPanelBgDark sapUiMediumMarginEnd"
         >
-          <Image
-            src="/assets/Logo_O_RGB.png"
-            press="fireLogoPress"
-            width="100px"
-            decorative="false"
-          />
-        </FlexBox>
-        <Title
-          class="sapUiMediumMarginTop sapUiSmallMargin integrtrPanelText"
-          level="H2"
-          titleStyle="H2"
-          text="or"
-        />
+          <Image src="/assets/Logo_O_RGB.png" press="fireLogoPress" width="6rem" />
+       </FlexBox>
+
+        <Label text="{i18n>OR}" design="Bold" />
+
         <FlexBox
-          height="150px"
-          width="150px"
+          direction="Column"
           alignItems="Center"
-          justifyContent="Center"
-          class="sapUiMediumMarginTop integrtrPanelBgLight"
+          class="integrtrPanelBgLight sapUiMediumMarginBegin"
         >
-          <Image
-            src="/assets/Logo_B_RGB.png"
-            press="waterLogoPress"
-            width="100px"
-            decorative="false"
-          />
+          <Image src="/assets/Logo_B_RGB.png" press="waterLogoPress" width="6rem" />
         </FlexBox>
-      </HBox>
-    </VBox>
+      </FlexBox>
+
+    </FlexBox>
     <footer>
       <Toolbar>
         <Image src="/assets/github_logo.png" width="30px" press="githubLogoPress" />

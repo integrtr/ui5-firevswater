@@ -1,0 +1,89 @@
+<mvc:View
+  controllerName="integrtr.ui5firevswater.controller.Results"
+  displayBlock="true"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:core="sap.ui.core"
+>
+	<Page showHeader="false">
+		<FlexBox
+      class="integrtrTopPanelBgLight"
+      height="50%"
+      alignItems="Center"
+      justifyContent="Center"
+      direction="Column"
+    >
+      <Image
+        ariaDetails="detailsActiveImage"
+        src="/assets/UI5_Logo_B.png"
+        class="sapUiMediumMarginTop"
+        width="200px"
+        decorative="false"
+      />
+			<Title
+        class="integrtrPanelTextDark sapUiSmallMarginTop"
+        level="H1"
+        titleStyle="H1"
+        wrapping="true"
+        textAlign="Center"
+        text="{i18n>WATER_TRIBE_TEXT}"
+      />
+    </FlexBox>
+
+    <FlexBox height="30%" direction="Column" justifyContent="Center" alignItems="Center">
+      <Label
+        text="{ parts: [{ path: 'i18n>TOTAL_VOTES'},{ path: 'UIModel>/total'}], formatter: 'jQuery.sap.formatMessage' }"
+        class="sapUiMediumMarginBottom"
+        design="Bold"
+      />
+
+      <FlexBox alignItems="Center" class="sapUiSmallMarginBottom">
+        <core:Icon
+          src="sap-icon://sap-ui5"
+          class="sapUiSmallMarginEnd"
+          size="25px"
+          color="#ff5216"
+        />
+        <ProgressIndicator
+          width="140px"
+          height="25px"
+          class="integrtrFireProgressBar"
+          percentValue="{ path: 'UIModel>/fire', formatter: '.getPercentageValue' }"
+          displayValue="{ path: 'UIModel>/fire', formatter: '.getPercentageValue' }%"
+        />
+      </FlexBox>
+
+      <FlexBox alignItems="Center">
+        <core:Icon
+          src="sap-icon://sap-ui5"
+          class="sapUiSmallMarginEnd"
+          size="25px"
+          color="#087cdc"
+        />
+        <ProgressIndicator
+          width="140px"
+          height="25px"
+          class="integrtrWaterProgressBar"
+          percentValue="{ path: 'UIModel>/water', formatter: '.getPercentageValue' }"
+          displayValue="{ path: 'UIModel>/water', formatter: '.getPercentageValue' }%"
+        />
+      </FlexBox>
+
+    </FlexBox>
+
+    <FlexBox justifyContent="Center" alignItems="Center" class="sapUiMediumMarginTopBottom">
+      <Label text="{i18n>SHARE_TEXT}" class="sapUiTinyMarginEnd" />
+      <Image src="/assets/twitter.png" width="30px" press="onTwitterShare" />
+    </FlexBox>
+
+    <footer>
+			<Toolbar>
+				<Image src="/assets/github_logo.png" width="30px" press="githubLogoPress" />
+				<ToolbarSpacer />
+				<ToolbarSpacer />
+				<Image src="/assets/integrtr_logo.png" width="120px" press="integrtrLogoPress" />
+			</Toolbar>
+		</footer>
+
+  </Page>
+</mvc:View>
