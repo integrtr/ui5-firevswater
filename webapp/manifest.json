@@ -1,7 +1,7 @@
 {
   "_version": "1.0.0",
   "sap.app": {
-    "id": "ui5firevswater",
+    "id": "integrtr.ui5firevswater",
     "type": "application",
     "i18n": "/i18n/i18n.properties",
     "applicationVersion": {

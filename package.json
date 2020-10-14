@@ -28,7 +28,7 @@
   "dependencies": {},
   "devDependencies": {
     "@prettier/plugin-xml": "^0.7.2",
-    "@ui5/cli": "^2.2.3",
+    "@ui5/cli": "^2.4.5",
     "commitlint": "^9.1.0",
     "editorconfig": "^0.15.3",
     "husky": "^4.2.5",
