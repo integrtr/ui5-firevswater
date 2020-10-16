@@ -52,15 +52,19 @@ sap.ui.define(['./Base.controller', 'sap/m/MessageToast'], function (BaseControl
       const total =
         this.getModel(this.UIModel).getProperty('/fire') +
         this.getModel(this.UIModel).getProperty('/water');
-      const parcentage = (value / total) * 100;
+      const parcentage = (value / total) * 100 || 0;
 
-      return parcentage.toFixed(0) || 0;
+      return parcentage.toFixed(0);
     },
 
     /**
      * handle twitter share
      */
-    onTwitterShare: function () {},
+    onTwitterShare: function () {
+      const twitterShareUrl =
+        'https://twitter.com/intent/tweet?text=Which%20side%20are%20you%20on%3F%0A%23Fire%20or%20%23Water%20%21%0A%0A&url=https%3A%2F%2Ffirevswater.integrtr.com%20%0A%0A%40OpenUI5%20%40INTEGRTR';
+      window.open(twitterShareUrl, 'twitterShare', 'width=600,height=400');
+    },
 
     /**
      * Press event handler for INTEGRTR logo
