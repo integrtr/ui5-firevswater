@@ -10,6 +10,11 @@ sap.ui.define(['./Base.controller', 'sap/m/MessageToast'], function (BaseControl
       }
     },
 
+    onAfterRendering: function () {
+      // Remove page loading indicator after page load
+      $('#app-loader-indicator').remove();
+    },
+
     /**
      * Press event handler for INTEGRTR logo
      */
