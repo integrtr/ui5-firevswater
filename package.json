@@ -12,11 +12,7 @@
   "homepage": "",
   "scripts": {
     "start": "ui5 serve -o",
-    "serve-dist": "ui5 serve --config ui5-dist.yaml -o",
-    "build": "ui5 build self-contained --clean-dest",
-    "build-all": "ui5 build self-contained -a --clean-dest",
-    "build-preload": "ui5 build --clean-dest",
-    "build-preload-all": "ui5 build -a --clean-dest"
+    "build": "ui5 build --clean-dest"
   },
   "repository": {
     "type": "git",
