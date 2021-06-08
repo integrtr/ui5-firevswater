@@ -1,0 +1,16 @@
+_schema-version: '2.0.0'
+ID: 'firevswater'
+version: 1.0.0
+
+parameters:
+  hcp-deployer-version: '1.0.0'
+
+modules:
+  - name: 'firevswater'
+    type: com.sap.fiori.app
+    path: ./dist
+    parameters:
+      html5-app-name: 'firevswater'
+      html5-app-display-name: 'firevswater'
+      minimum-sapui5-version: 1.44.10
+      html5-app-version: 1.0.0-${timestamp}

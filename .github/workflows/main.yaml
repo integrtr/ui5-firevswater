@@ -1,0 +1,31 @@
+name: SAP Cloud Deployment
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    name: Deployment
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout to repository
+        uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Load NPM dependencies
+        run: yarn
+      - name: Build UI5 Project
+        run: yarn build
+      - name: Deploy to SAP Cloud
+        uses: integrtr/ui5-deploy@v1.0.1
+        with:
+          type: 'neo'
+          user: ${{ secrets.SAP_CLOUD_USER }}
+          password: ${{ secrets.SAP_CLOUD_PASSWORD }}
+          host: ${{ secrets.SAP_CLOUD_HOST }}
+          sub-account-id: ${{ secrets.SAP_CLOUD_SUB_ACCOUNT }}
