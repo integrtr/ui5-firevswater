@@ -1,9 +1,7 @@
 name: SAP Cloud Deployment
 
 on:
-  push:
-    branches:
-      - master
+  pull_request:
 
 jobs:
   deploy:
