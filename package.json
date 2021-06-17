@@ -12,7 +12,7 @@
   "homepage": "",
   "scripts": {
     "start": "ui5 serve -o",
-    "build": "ui5 build --clean-dest",
+    "build": "ui5 build --clean-dest"
   },
   "repository": {
     "type": "git",
