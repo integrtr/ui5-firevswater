@@ -92,7 +92,9 @@
           class="sapUiLargeMarginEnd"
           press="githubLogoPress" />
         <ToolbarSpacer />
-        <!-- <Image src="/assets/ui5con.png" width="120px" press="ui5LogoPress" /> -->
+        <Image src="/assets/ui5con.png"
+          width="120px"
+          press="ui5LogoPress" />
         <ToolbarSpacer />
         <Image src="/assets/integrtr_logo.png"
           width="120px"
