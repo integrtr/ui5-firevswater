@@ -1,54 +1,76 @@
-<mvc:View
-  controllerName="integrtr.ui5firevswater.controller.Home"
+<mvc:View controllerName="integrtr.ui5firevswater.controller.Home"
   displayBlock="true"
   xmlns="sap.m"
   xmlns:mvc="sap.ui.core.mvc"
-  xmlns:core="sap.ui.core"
->
+  xmlns:core="sap.ui.core">
   <Page showHeader="false">
-    <FlexBox direction="Column" alignItems="Center" height="90%">
-      <Text class="integrtrTitleQuestion sapUiLargeMarginTop" text="{i18n>TITLE}" />
-      <Text class="integrtrTitleQuestion sapUiLargeMarginTopBottom" text="{i18n>TITLE_QUES}" />
+    <FlexBox direction="Column"
+      alignItems="Center"
+      height="90%">
+      <Text class="integrtrTitleQuestion sapUiLargeMarginTop"
+        text="{i18n>TITLE}" />
+      <Text class="integrtrTitleQuestion sapUiLargeMarginTopBottom"
+        text="{i18n>TITLE_QUES}" />
 
-      <FlexBox width="100%" justifyContent="Center" alignItems="Center" class="sapUiLargeMarginTop">
-        <FlexBox
-          direction="Column"
+      <FlexBox width="100%"
+        justifyContent="Center"
+        alignItems="Center"
+        class="sapUiLargeMarginTop">
+        <FlexBox direction="Column"
           alignItems="Center"
-          class="integrtrPanelBgDark sapUiMediumMarginEnd"
-        >
-          <Image src="/assets/Logo_O_RGB.png" press="fireLogoPress" width="6rem" />
-       </FlexBox>
+          class="integrtrPanelBgDark sapUiMediumMarginEnd">
+          <Image src="/assets/Logo_O_RGB.png"
+            press="fireLogoPress"
+            width="6rem" />
+        </FlexBox>
 
-        <Label text="{i18n>OR}" design="Bold" />
+        <Label text="{i18n>OR}"
+          design="Bold" />
 
-        <FlexBox
-          direction="Column"
+        <FlexBox direction="Column"
           alignItems="Center"
-          class="integrtrPanelBgLight sapUiMediumMarginBegin"
-        >
-          <Image src="/assets/Logo_B_RGB.png" press="waterLogoPress" width="6rem" />
+          class="integrtrPanelBgLight sapUiMediumMarginBegin">
+          <Image src="/assets/Logo_B_RGB.png"
+            press="waterLogoPress"
+            width="6rem" />
         </FlexBox>
       </FlexBox>
 
     </FlexBox>
 
-    <FlexBox justifyContent="Center" alignItems="Center" direction="Column">
-      <Select width="200px" class="SapUiSizeCompact" change="onLanguageSwitch">
+    <FlexBox justifyContent="Center"
+      alignItems="Center"
+      direction="Column">
+      <Select width="200px"
+        class="SapUiSizeCompact"
+        change="onLanguageSwitch">
         <items>
-          <core:Item key="EN" text="English" />
-          <core:Item key="HI" text="Hindi" />
-          <core:Item key="DE" text="Deutsche" />
-          <core:Item key="KN" text="Kannada" />
+          <core:Item key="EN"
+            text="English" />
+          <core:Item key="HI"
+            text="Hindi" />
+          <core:Item key="DE"
+            text="Deutsche" />
+          <core:Item key="KN"
+            text="Kannada" />
         </items>
       </Select>
     </FlexBox>
 
     <footer>
       <Toolbar>
-        <Image src="/assets/github_logo.png" width="30px" press="githubLogoPress" />
+        <Image src="/assets/github_logo.png"
+          width="30px"
+          press="githubLogoPress" />
         <ToolbarSpacer />
+        <Image src="/assets/ui5con.png"
+          width="120px"
+          press="ui5LogoPress"
+          visible="false" />
         <ToolbarSpacer />
-        <Image src="/assets/integrtr_logo.png" width="120px" press="integrtrLogoPress" />
+        <Image src="/assets/integrtr_logo.png"
+          width="120px"
+          press="integrtrLogoPress" />
       </Toolbar>
     </footer>
 

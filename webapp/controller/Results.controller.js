@@ -79,5 +79,12 @@ sap.ui.define(['./Base.controller', 'sap/m/MessageToast'], function (BaseControl
     githubLogoPress: function () {
       window.open('https://github.com/integrtr/ui5-firevswater', '_blank');
     },
+
+    /**
+     * Press event handler for ui5con logo
+     */
+    ui5LogoPress: function () {
+      window.open('https://openui5.org/ui5con/onair2021/', '_blank');
+    },
   });
 });

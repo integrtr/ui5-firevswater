@@ -59,5 +59,11 @@ sap.ui.define(['./Base.controller', 'sap/m/MessageToast'], function (BaseControl
 
       this.getRouter().getTargets().display('fire');
     },
+    /**
+     * Press event handler for ui5con logo
+     */
+    ui5LogoPress: function () {
+      window.open('https://openui5.org/ui5con/onair2021/', '_blank');
+    },
   });
 });
